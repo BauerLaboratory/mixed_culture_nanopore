@@ -1,0 +1,23 @@
+from snakemake.utils import min_version
+
+min_version("7.12.1")
+
+configfile: "config/config.yaml"
+
+# Allow users to fix the underlying OS via singularity.
+container: "docker://continuumio/miniconda3"
+
+
+
+
+
+include: "rules/common.smk"
+include: "rules/demultiplexing.smk"
+include: "rules/mapping.smk"
+include: "rules/count.smk"
+
+
+
+rule all:
+    input:
+        get_final_output(),
