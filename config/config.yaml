@@ -1,20 +1,21 @@
-# path to samples sheet
+# provide paths to the files
 samples: config/samples.tsv
 
 mutations: config/mutations.tsv
 
 cell_lines: config/cell_lines.tsv
 
-reference: "config/reference/KIT-201-cDNA-ref.fasta"
+reference: config/reference/KIT-201-cDNA-ref.fasta
 
-
-prepool_name: "sample_name_of_the_preepool"
+# set the sample name/time point of the pre-pool.
+# the abundance matrix will be normalised on pre-pool
+prepool_name: "pre-pool"
 
 
 params:
   # set min amplicon length (bp)
   amplicon_length: 1100
-  # Reads within start position and + 50bp will be not dropped
+  # Reads within start position + 50bp will be kept
   cDNA_pos_start: 1450
   #Samtools mpileup. See manual for other params https://www.htslib.org/doc/samtools-mpileup.html
   mpileup_extras: "--max-depth 1000000 --min-BQ 0 " # params --output-QNAME -O are alredy set.

@@ -32,6 +32,6 @@ def get_barcode(wildcards):
 def get_final_output():
     final_output = []
     
-    final_output=expand(["results/normalize.matrix.tsv","results/bar_plot_abundance.jpg"], sample=SAMPLES, locus=LOCUS)
+    final_output=expand(["results/normalized.abundance.tsv","results/bar_plot_normalized_abundance.jpg"], sample=SAMPLES, locus=LOCUS)
     
     return final_output

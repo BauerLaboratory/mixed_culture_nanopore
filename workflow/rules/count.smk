@@ -78,7 +78,7 @@ rule normalize_abundance_matrix:
     input:
         matrix="results/abundance.matrix.tsv",
     output:
-        tab_out="results/normalize.matrix.tsv"
+        tab_out="results/normalized.abundance.tsv"
     conda:
         "../envs/pandas.yaml"
     params:
@@ -89,9 +89,9 @@ rule normalize_abundance_matrix:
 
 rule bar_plot_abundance:
     input:
-        abundance_matrix="results/normalize.matrix.tsv",
+        abundance_matrix="results/normalized.abundance.tsv",
     output:
-        plot_out="results/bar_plot_abundance.jpg"
+        plot_out="results/bar_plot_normalized_abundance.jpg"
     conda:
         "../envs/pandas.yaml"
     script:

@@ -10,8 +10,8 @@
 !workflow/rules/*
 !workflow/rules/annotation/*
 !workflow/resources/*
-!fish_plots
-!fish_plots/*
+!clonal_plots
+!clonal_plots/*
 !LICENSE
 !README.md
 !.gitignore

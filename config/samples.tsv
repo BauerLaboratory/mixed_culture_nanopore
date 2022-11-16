@@ -1,2 +1,6 @@
 sample_name	fastq	barcode	comment
-samle_1	path/to/fastq	AATTGGATA
+pre-pool	path/to/fastq	A	
+time_point_1	path/to/fastq	A	
+time_point_2	path/to/fastq	A	
+Switch_1	path/to/fastq	A	
+Switch_2	path/to/fastq	A	

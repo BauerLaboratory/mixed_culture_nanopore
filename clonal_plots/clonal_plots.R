@@ -1,5 +1,7 @@
 if (!requireNamespace("BiocManager", quietly=TRUE)) install.packages("BiocManager")
-
+if (!requireNamespace("reshape2", quietly=TRUE)) install.packages("reshape2")
+if (!requireNamespace("dplyr", quietly=TRUE)) install.packages("dplyr")
+if (!requireNamespace("htmlwidgets", quietly=TRUE)) install.packages("htmlwidgets")
 if (!requireNamespace("timescape", quietly=TRUE)) BiocManager::install("timescape")
 
 
@@ -9,12 +11,14 @@ library(dplyr)
 library(htmlwidgets)
 
 
-example("timescape")
+# example("timescape")
 
+
+# set working directory
 setwd("C:/Users/daw/Desktop/plots")
 
 # pathways
-clonal_prev_path="normalize.matrix.tsv"
+clonal_prev_path="normalized.matrix.tsv"
 tree_edges_path="tree_edges.tsv"
 clone_colours_path="clone_colours.tsv"
 plot_matrix_path="plot_matrix.tsv"

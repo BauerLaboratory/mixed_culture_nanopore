@@ -1,4 +1,4 @@
 name	pos_cDNA	ref	alt	type	alt_length	comment
-mutation1	10	T	TGCA	ins	4	
-mutation2	20	TT	GTTG	del	4	
-mutation3	30	T	C	snv	1	
+Mutation_1	10	T	TGCA	ins	4	
+Mutation_2	20	TT	GTTG	del	4	
+Mutation_3	30	T	C	snv	1	
