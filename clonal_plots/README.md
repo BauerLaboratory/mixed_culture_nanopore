@@ -1,4 +1,4 @@
-For `clone_colours.tsv` and `tree_edges.tsv` see [TimeScape manual][(https://bioconductor.org/packages/release/bioc/vignettes/timescape/inst/doc/timescape_vignette.html). 
+For `clone_colours.tsv` and `tree_edges.tsv` see [TimeScape manual](https://bioconductor.org/packages/release/bioc/vignettes/timescape/inst/doc/timescape_vignette.html). 
 
 In the plot_matrix.tsv provide plot names and time points.
 
